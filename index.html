@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Radio Widget</title>
+  <meta charset="UTF-8"></meta>
+  <meta name="description" content="VV"></meta>
+  <meta name="author" content="Valentina Versari"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+  <link rel="stylesheet" href="../radio-widget/scss/style.css" type="text/css"></link>
+<body>
+  <h1> Radio Widget </h1>
+  <div class="wrapper">
+    <div class="header">
+      <div class="return-icon">
+      <i class="icon--return"></i>
+      </div>
+      <p class="title" >Stations</p>
+      <div class="power">
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="accordionItem open">
+        <h2 class="accordionItemHeading">Putin FM</h2>
+        <div class="accordionItemContent">
+          <p>BLA BLABLABLALLBALBLALBLA
+            BLABLABLALLBALBLALBLABLALBLA
+            BLABLABLALLBALBLALBLABLALBLA
+            BLABLABLALLBALBLALBLA
+            BLABLABLALLBALBLALBLA
+          </p>
+        </div>
+      </div>
+    
+        <div class="accordionItem close">
+          <h2 class="accordionItemHeading">Bla Bla FM</h2>
+          <div class="accordionItemContent">
+              <p>BLA BLABLABLALLBALBLALBLA
+                  BLABLABLALLBALBLALBLABLALBLA
+                  BLABLABLALLBALBLALBLABLALBLA
+                  BLABLABLALLBALBLALBLA
+                  BLABLABLALLBALBLALBLA
+                </p>
+          </div>
+        </div>
+    
+        <div class="accordionItem close">
+          <h2 class="accordionItemHeading">Maximum FM</h2>
+            <div class="accordionItemContent">
+                <p>BLA BLABLABLALLBALBLALBLA
+                    BLABLABLALLBALBLALBLABLALBLA
+                    BLABLABLALLBALBLALBLABLALBLA
+                    BLABLABLALLBALBLALBLA
+                    BLABLABLALLBALBLALBLA
+                  </p>
+          </div>
+        </div>
+
+        <div class="accordionItem close">
+            <h2 class="accordionItemHeading">Lalaland FM</h2>
+            <div class="accordionItemContent">
+                <p>BLA BLABLABLALLBALBLALBLA
+                    BLABLABLALLBALBLALBLABLALBLA
+                    BLABLABLALLBALBLALBLABLALBLA
+                    BLABLABLALLBALBLALBLA
+                    BLABLABLALLBALBLALBLA
+                  </p>
+            </div>
+          </div>
+
+        <div class="accordionItem close">
+            <h2 class="accordionItemHeading">Bum FM</h2>
+            <div class="accordionItemContent">
+                <p>BLA BLABLABLALLBALBLALBLA
+                    BLABLABLALLBALBLALBLABLALBLA
+                    BLABLABLALLBALBLALBLABLALBLA
+                    BLABLABLALLBALBLALBLA
+                    BLABLABLALLBALBLALBLA
+                  </p>
+            </div>
+          </div>
+    </div>
+  <div class="footer">
+      <p class="title">Currently Playing</p>
+  </div>
+
+  </div>
+</body>
+<script>
+	var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionItemHeading');
+    for (i = 0; i < accHD.length; i++) {
+        accHD[i].addEventListener('click', toggleItem, false);
+    }
+    function toggleItem() {
+        var itemClass = this.parentNode.className;
+        for (i = 0; i < accItem.length; i++) {
+            accItem[i].className = 'accordionItem close';
+        }
+        if (itemClass == 'accordionItem close') {
+            this.parentNode.className = 'accordionItem open';
+        }
+    }
+
+    </script>

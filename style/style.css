@@ -3,8 +3,9 @@
   grid-template-columns: 1fr 500px 1fr;
   background-color: #2F4F4F;
   border-radius: 18px;
-  border: 1px solid #2F4F4F;
-  margin: 20px auto; }
+  border: 1px solid #000000;
+  margin: 20px auto;
+  box-shadow: 5px 10px 18px #888888; }
 
 .header {
   display: grid;
@@ -21,7 +22,7 @@
   font-size: 28px;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  color: white;
+  color: #FFFFFF;
   margin: 25px 0;
   text-align: center; }
 
@@ -38,7 +39,7 @@
 .content {
   display: grid;
   grid-column: 2;
-  height: 320px;
+  height: 330px;
   overflow: auto; }
 
 .station {
@@ -57,7 +58,7 @@
   margin: 0px 0px 1px 0px;
   padding: 10px 20px;
   background: #2F4F4F;
-  color: #fff;
+  color: #FFFFFF;
   width: 100%;
   border-radius: 3px;
   box-sizing: border-box; }
@@ -85,7 +86,7 @@
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   background-color: #2F4F4F;
-  color: white; }
+  color: #FFFFFF; }
 
 hr {
   display: block;
@@ -98,4 +99,4 @@ hr {
   width: 90%; }
 
 .footer {
-  border-top: 1px solid white; }
+  border-top: 1px solid #000000; }

@@ -2,14 +2,17 @@
   $border-radius: 18px;
   $tile-color: #2F4F4F;
   $orange-color: #FF7F50;
+  $white-color: #FFFFFF;
+  $black-color: #000000;
 
 .wrapper {
   max-width: 450px;
   grid-template-columns: 1fr 500px 1fr;
   background-color: $tile-color;
   border-radius: $border-radius;
-  border: 1px solid $tile-color;
+  border: 1px solid $black-color;
   margin: 20px auto;
+  box-shadow:  5px 10px 18px #888888;
 }
 
 .header {
@@ -28,7 +31,7 @@
   font-size: 28px;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  color: white;
+  color: $white-color;
   margin: 25px 0;
   text-align: center;
 }
@@ -50,7 +53,7 @@
 .content {
   display: grid;
   grid-column: 2;
-  height: 320px;
+  height: 330px;
   overflow: auto;
 }
 
@@ -72,7 +75,7 @@
   margin: 0px 0px 1px 0px;
   padding: 10px 20px;
   background: $tile-color;
-  color:#fff;
+  color:$white-color;
   width: 100%;
   border-radius: 3px;
   box-sizing: border-box;
@@ -105,7 +108,7 @@
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   background-color: $tile-color;
-  color: white;
+  color: $white-color;
 }
 
 
@@ -121,5 +124,5 @@ hr {
 }
 
 .footer {
-  border-top: 1px solid white;
+  border-top: 1px solid $black-color;
 }

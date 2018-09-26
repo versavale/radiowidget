@@ -9,7 +9,7 @@
   background-color: $tile-color;
   border-radius: $border-radius;
   border: 1px solid $tile-color;
-  margin: 10% auto;
+  margin: 5% auto;
 }
 
 .header {
@@ -30,7 +30,7 @@
   overflow: auto;
 }
 
-.title {
+.title { 
   display: grid;
   font-size: 24px;
   font-weight: bold;

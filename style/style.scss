@@ -9,18 +9,42 @@
   background-color: $tile-color;
   border-radius: $border-radius;
   border: 1px solid $tile-color;
-  margin: 5% auto;
+  margin: 20px auto;
 }
 
 .header {
   display: grid;
   grid-column: 1;
   background-color: $orange-color;
-  height: 50px;
+  height: 80px;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
   grid-template-columns: 1fr 2fr 1fr;
   margin-top: 0px;
+}
+
+.title { 
+  display: grid;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.title--footer {
+  margin: 20px 0;
+}
+
+.header-icon {
+  text-align: center;
+
+  a, img {
+    width: 26px;
+    height: 26px;
+    margin: 30px auto;
+  }
 }
 
 .content {
@@ -30,42 +54,10 @@
   overflow: auto;
 }
 
-.title { 
-  display: grid;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  color: white;
-  margin: 10px 0;
-  text-align: center;
-}
-
-a {
-  height: 20px;
-  width: 20px;
-}
-
 .station {
   color: grey;
   display: inline-block;
 }
-
-
-//icons
-.icon--return {
-  background-image: url(../assets/return.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  vertical-align: middle;
-  
-}
-
-
-//accordion
 
 .accordionItem {
   float:left;

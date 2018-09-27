@@ -40,6 +40,11 @@
   margin: 20px 0;
 }
 
+.major {
+  color: $orange-color;
+  margin-bottom: 0;
+}
+
 .header-icon {
   text-align: center;
 
@@ -53,8 +58,8 @@
 .content {
   display: grid;
   grid-column: 2;
-  height: 330px;
-  overflow: auto;
+  height: 340px;
+  overflow-y: scroll;
 }
 
 .station {
@@ -79,28 +84,32 @@
   width: 100%;
   border-radius: 3px;
   box-sizing: border-box;
+   P {
+     float: right;
+     margin:0;
+   }
 }
 
 .close .accordionItemContent{
-  height:0px;
+  height: 0px;
   transition:height 1s ease-out;
   transform: scaleY(0);
-  float:left;
-  display:block;
-  
-  
+  float: left;
+  display: block;
 }
 .open .accordionItemContent{
-      padding: 20px;
+  padding: 20px;
   background-color: $tile-color;
   border: 1px solid $tile-color;
   width: 100%;
-  margin: 0px 0px 1px 0px;
-  display:block;
+  margin: 0px 0px 20px 0px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   transform: scaleY(1);
   transform-origin: top;
-//transition: transform 0.1s ease;
   box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
 }
 
 .open .accordionItemHeading{
@@ -125,4 +134,35 @@ hr {
 
 .footer {
   border-top: 1px solid $black-color;
+}
+
+.icon-main {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-plus, .icon-minus {
+  width: 10px;
+  height: 10px;
+}
+
+//scrollbar
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $tile-color; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: $tile-color; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $tile-color; 
 }
